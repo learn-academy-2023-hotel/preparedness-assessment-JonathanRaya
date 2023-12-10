@@ -15,9 +15,9 @@ const ModalComponent = (props) => {
   return (
     <>
       <div>
-        <Button color="danger" onClick={toggle}>
+        <button type="button" className="button-style"  onClick={toggle}>
           Click Me
-        </Button>
+        </button>
         <Modal isOpen={modal} toggle={toggle} {...props}>
           <ModalHeader toggle={toggle}>
             Hello there {props.name}! </ModalHeader>
